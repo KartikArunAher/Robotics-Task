@@ -15,4 +15,12 @@ Additionaly It also contains some built in commands like pinmode(pin,mode),digit
 
 b.ESP-IDF is the official, open-source software development framework provided by Espressif Systems for their ESP32 systems.Similar to the Arduino IDE it uses C/C++ Programming language to write,upload to the Hardware.Like Arduino it also has inbuilt commands(For example digitalWrite(pin, value) in Arduino is similar to gpio_set_level() in ESPIDF.If you will try to directly Learn ESP IDF you will feel it harder But if you have the knowledge of Arduino IDE it will be simpler to get into the ESP IDF.As Arduino circuits are not as complex as ESP32 circuits.
 
-Explanation of Coding task of writing Arduino Program for having a button for ON or OFF led and also changing speed using delay:The LED is connected to pin 9 and brightness of LED is controlled by PWM to create blinking effect. A button on pin 2 is used as a switch, so if it is press it turns the blinking effect ON or OFF. The INPUT_PULLUP mode is used for the button, meaning it reads LOW when pressed. When enabled, the LED brightness increases and decreases automatically; when disabled, the LED remains OFF.
+Explanation of Coding task of writing Arduino Program for having a button for ON or OFF led and also changing speed using delay:The LED is connected to pin 9 and brightness of LED is controlled by PWM to create blinking effect. A button on pin 2 is used as a switch, so if it is press it turns the blinking effect ON or OFF. The INPUT_PULLUP mode is used for the button, meaning it reads LOW when pressed. When enabled, the LED becomes ON; when disabled, the LED remains OFF.
+
+Screenshots:Input
+
+<img width="1919" height="962" alt="Screenshot 2026-02-05 224935" src="https://github.com/user-attachments/assets/aa6511ad-3f33-4ccb-9e00-297020433c6e" />
+
+Output
+
+<img width="1920" height="398" alt="Screenshot 2026-02-05 225121" src="https://github.com/user-attachments/assets/4c4c8975-9d16-4274-82f6-c9e717bd0c99" />
