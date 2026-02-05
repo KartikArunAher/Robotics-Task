@@ -1,1 +1,29 @@
+//Coding task of writing Arduino Program for having a button for ON or OFF led and also changing speed using delay:
+int led = 9;// pin to which LED is attached
+bool ledState = LOW;// LED ON or OFF state
+bool ledEnable = true;// enable or disable blinking
+int buttonPin = 2; 
 
+void setup() {
+//put your steup code here,to run once:
+pinMode(led, OUTPUT);// pin 9 is OUTPUT
+pinMode(buttonPin, INPUT_PULLUP);     
+}
+
+void loop() {
+
+//put your main code her,to run repeatedly
+if (digitalRead(buttonPin) == LOW) {
+    ledEnable = !ledEnable;
+    delay(200);
+}
+  if (ledEnable) {
+  ledState = !ledState;// change LED state
+   digitalWrite(led, ledState);// turn LED ON or OFF
+  delay(400);                     
+  } 
+
+  else {
+    digitalWrite(led, LOW);          
+  }
+}
